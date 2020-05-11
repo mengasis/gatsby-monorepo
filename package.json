@@ -1,0 +1,47 @@
+{
+  "name": "gatsby-monorepo",
+  "description": "Gatsby Monorepo",
+  "version": "0.1.0",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-json": "^1.0.20",
+    "react": "16.4.2",
+    "react-helmet": "^5.2.0",
+    "serve": "^10.0.0",
+    "styled-components": "^3.3.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "jest test --config ./json-config.json"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "babel-jest": "^23.4.2",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-airbnb-typescript": "7.2.1",
+    "eslint-plugin-import": "^2.20.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mengasis/gatsby-monorepo.git"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
