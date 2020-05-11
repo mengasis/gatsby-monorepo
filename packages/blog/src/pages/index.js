@@ -1,8 +1,8 @@
-import {ItemCard, ItemCardWrapper} from "@gatsby-monorepo/shared";
-import Link from "gatsby-link";
 import React from "react";
 
-const BlogPage = ({ data }) => {
+import {ItemCard, ItemCardWrapper} from "@gatsby-monorepo/shared";
+
+const IndexPage = ({ data }) => {
     const edges = data.allBlogJson.edges
 
     return (
@@ -11,12 +11,12 @@ const BlogPage = ({ data }) => {
             <ItemCardWrapper>
                 {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="post" />)}
             </ItemCardWrapper>
-            <Link to="/">Go back to the shop</Link>
+            <a href={process.env.SHOP_URL}>Go back to the shop</a>
         </div>
     )
 }
 
-export default BlogPage
+export default IndexPage
 
 export const query = graphql`
     query BlogPostsQuery {

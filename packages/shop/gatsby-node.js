@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     result.data.allShoppingJson.edges.map(edge => {
       createPage({
         path: `item/${edge.node.id}`,
-        component: path.resolve('./pages/shoppingItem.js'),
+        component: path.resolve('./src/pages/shoppingItem.js'),
         context: {
           data: edge.node,
         },

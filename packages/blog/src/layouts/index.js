@@ -1,11 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { PrimaryLayout } from "../../packages/shared"
+import { PrimaryLayout } from '@gatsby-monorepo/shared'
 
-const Layout = ({ children, data }) => (
-    <PrimaryLayout children={children} data={data} />
-)
+const Layout = ({ children, data }) => <PrimaryLayout children={children} data={data} />;
 
 Layout.propTypes = {
     children: PropTypes.func,

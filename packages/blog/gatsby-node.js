@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allBlogJson.edges.map(edge => {
         createPage({
           path: `post/${edge.node.id}`,
-          component: path.resolve('./pages/blogItem.js'),
+          component: path.resolve('./src/pages/blogItem.js'),
           context: {
             data: edge.node,
           },

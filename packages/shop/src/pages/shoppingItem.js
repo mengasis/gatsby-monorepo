@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Button from '../../packages/shared/components/Button'
+import {Button} from '@gatsby-monorepo/shared'
 
 export default ({ pathContext: { data }}) => {
   if (!data) {
@@ -12,7 +12,7 @@ export default ({ pathContext: { data }}) => {
       <h1>{data.title}</h1>
       <p>{data.content}</p>
       <Button>Purchase</Button>
-      <Link to="/">Back to Shop</Link>
+        <a href={process.env.BLOG_URL}>Back to Shop</a>
     </div>
   )
 }
