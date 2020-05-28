@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   background: ${theme.purple};
   border-radius: 2px;
   border: none;
-  color: ${theme.white};
+  color: ${theme.lightGrey};
   cursor: pointer;
   display: block;
   margin-bottom: 20px;
