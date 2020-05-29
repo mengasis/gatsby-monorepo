@@ -1,8 +1,9 @@
 {
   "name": "gatsby-monorepo",
   "description": "Gatsby Monorepo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
+    "@semantic-release/git": "^9.0.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
