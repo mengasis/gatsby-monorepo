@@ -1,7 +1,7 @@
 {
   "name": "@gatsby-monorepo/blog",
   "description": "Gatsby Monorepo: Blog",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "dependencies": {
     "@gatsby-monorepo/shared": "^0.1.0",
     "dotenv": "^8.2.0",
