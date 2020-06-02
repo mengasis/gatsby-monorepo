@@ -41,6 +41,7 @@
     "eslint-config-airbnb-typescript": "7.2.1",
     "eslint-plugin-import": "^2.20.2",
     "lerna": "2.11.0",
+    "lerna-semantic-release": "^9.1.0",
     "semantic-release": "^17.0.8"
   },
   "repository": {
