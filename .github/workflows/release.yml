@@ -17,5 +17,5 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx lerna-semantic-release pre
+        run: npx multi-semantic-release
 

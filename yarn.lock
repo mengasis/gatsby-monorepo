@@ -1005,6 +1005,26 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@qiwi/multi-semantic-release@^2.6.4":
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-2.6.4.tgz#c2c4bee3ad854511d8794a45c91011319bfe1c39"
+  integrity sha512-tah/FXGz4lFQccPZ9MS5Ii+4HTtsb68TyC2eJoWlJb7/zhXTXOFvNjNYz7HDXcVdqDxk/ptCa/JX60NR9+LSRg==
+  dependencies:
+    bash-glob "^2.0.0"
+    blork "^9.2.2"
+    cosmiconfig "^6.0.0"
+    execa "^4.0.2"
+    get-stream "^5.1.0"
+    git-log-parser "^1.2.0"
+    lodash "^4.17.15"
+    meow "^7.0.1"
+    promise-events "^0.1.8"
+    semantic-release "^17.0.8"
+    semver "^7.3.2"
+    signale "^1.4.0"
+    stream-buffers "^3.0.2"
+    tempy "^0.5.0"
+
 "@semantic-release/commit-analyzer@^2.0.0", "@semantic-release/commit-analyzer@~2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-2.0.0.tgz#924d1e2c30167c6a472bed9f66ee8f8e077489b2"
@@ -2963,6 +2983,19 @@ bash-glob@^1.0.1:
     is-extglob "^2.1.1"
     is-glob "^4.0.0"
 
+bash-glob@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bash-glob/-/bash-glob-2.0.0.tgz#a8ef19450783403ed93fccca2dbe09f2cf6320dc"
+  integrity sha512-53/NJ+t2UAkEYgQPO6aFjbx1Ue8vNNXCYaA4EljNKP1SR8A9dSQQoBmYWR8BLXO0/NDRJEMSJ4BxWihi//m3Kw==
+  dependencies:
+    bash-path "^1.0.1"
+    component-emitter "^1.2.1"
+    cross-spawn "^5.1.0"
+    each-parallel-async "^1.0.0"
+    extend-shallow "^2.0.1"
+    is-extglob "^2.1.1"
+    is-glob "^4.0.0"
+
 bash-path@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/bash-path/-/bash-path-1.0.3.tgz#dbc9efbdf18b1c11413dcb59b960e6aa56c84258"
@@ -3055,6 +3088,11 @@ blob@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
+
+blork@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/blork/-/blork-9.2.2.tgz#7714edd85cf96ce4282167a8a95d32eb5f228cc7"
+  integrity sha512-0laoe1IcWvbS0FQKsAE41xG6ZjG4fTTi+tXVTTY6xTT9t9RDZ8Y8xGKanVQlxHrC37lTxU+72mHyJAiQdZ5YRg==
 
 bluebird@^3.0.5, bluebird@^3.3.4, bluebird@^3.4.6, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -5238,6 +5276,11 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+each-parallel-async@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/each-parallel-async/-/each-parallel-async-1.0.0.tgz#91783e190000c7dd588336b2d468ebaf71980f7b"
+  integrity sha512-P/9kLQiQj0vZNzphvKKTgRgMnlqs5cJsxeAiuog1jrUnwv0Z3hVUwJDQiP7MnLb2I9S15nR9SRUceFT9IxtqRg==
+
 ecc-jsbn@~0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz#3a83a904e54353287874c564b7549386849a98c9"
@@ -5868,7 +5911,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^4.0.0:
+execa@^4.0.0, execa@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/execa/-/execa-4.0.2.tgz#ad87fb7b2d9d564f70d2b62d511bee41d5cbb240"
   integrity sha512-QI2zLa6CjGWdiQsmSkZoGtDx2N+cQIGb3yNolGTdjSQzydzLgYYf8LRuagp7S7fPimjcrzUDSUFd/MgzELMi4Q==
@@ -6967,7 +7010,7 @@ get-stream@^4.0.0, get-stream@^4.1.0:
   dependencies:
     pump "^3.0.0"
 
-get-stream@^5.0.0:
+get-stream@^5.0.0, get-stream@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-5.1.0.tgz#01203cdc92597f9b909067c3e656cc1f4d3c4dc9"
   integrity sha512-EXr1FOzrzTfGeL0gQdeFEvOMm2mzMOglyiOXSTpPC+iAjAKftbr3jpCMWynogwYnM+eSj9sHGc6wjIcDvYiygw==
@@ -9881,7 +9924,7 @@ meow@^4.0.0:
     redent "^2.0.0"
     trim-newlines "^2.0.0"
 
-meow@^7.0.0:
+meow@^7.0.0, meow@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/meow/-/meow-7.0.1.tgz#1ed4a0a50b3844b451369c48362eb0515f04c1dc"
   integrity sha512-tBKIQqVrAHqwit0vfuFPY3LlzJYkEOFyKa3bPgxzNl6q/RtN8KQ+ALYEASYuFayzSAsjlhXj/JZ10rH85Q6TUw==
@@ -12283,6 +12326,11 @@ promise-each@^2.2.0:
   dependencies:
     any-promise "^0.1.0"
 
+promise-events@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/promise-events/-/promise-events-0.1.8.tgz#8c6724de7fae34f2e54a2c6e1cd068ee3d449a89"
+  integrity sha512-xg8Hyy8uwq5dJeSvwxtCLXGYTBFPoQyaQDBR6FheTRUBTclByz/yTaEcXsYvd6TAPwAM0ude+Bu0Shvkj2OK8g==
+
 promise-inflight@^1.0.1, promise-inflight@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
@@ -14039,7 +14087,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-signale@^1.2.1:
+signale@^1.2.1, signale@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/signale/-/signale-1.4.0.tgz#c4be58302fb0262ac00fc3d886a7c113759042f1"
   integrity sha512-iuh+gPf28RkltuJC7W5MRi6XAjTDCAPC/prJUpQoG4vIP3MJZ+GTydVnodXA7pwvTKb2cA0m9OFZW/cdWy/I/w==
@@ -14506,6 +14554,11 @@ stream-browserify@^2.0.1:
   dependencies:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
+
+stream-buffers@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-3.0.2.tgz#5249005a8d5c2d00b3a32e6e0a6ea209dc4f3521"
+  integrity sha512-DQi1h8VEBA/lURbSwFtEHnSTb9s2/pwLEaFuNhXwy1Dx3Sa0lOuYT2yNUr4/j2fs8oCAMANtrZ5OrPZtyVs3MQ==
 
 stream-cache@~0.0.1:
   version "0.0.2"
