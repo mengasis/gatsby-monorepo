@@ -24,7 +24,8 @@
     "run:shop": "cd packages/shop && yarn develop",
     "run:all": "npm-run-all --parallel run:blog run:shop",
     "lint": "eslint . --ext .ts",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "lerna:pre": "lerna-semantic-release pre"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.0.0-rc.1",
@@ -40,7 +41,10 @@
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-config-airbnb-typescript": "7.2.1",
     "eslint-plugin-import": "^2.20.2",
-    "lerna-semantic-release": "^9.1.0"
+    "lerna": "2.11.0",
+    "lerna-semantic-release": "^9.1.0",
+    "semantic-release": "^17.0.8",
+    "semantic-release-monorepo": "^7.0.2"
   },
   "repository": {
     "type": "git",
