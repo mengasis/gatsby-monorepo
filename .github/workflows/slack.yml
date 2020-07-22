@@ -19,6 +19,6 @@ jobs:
           SLACK_ICON:     ':oso-embonor:'
           SLACK_COLOR:    '#00b181'
           SLACK_MESSAGE:  'Rebase master now!! :ahhhhhhhhh: :rocket:'
-          SLACK_TITLE:    ${{ github.event.number }} PR closed
+          SLACK_TITLE:    ${{ '#'github.event.number 'PR closed' }}
           SLACK_USERNAME: Monorepo status
           MSG_MINIMAL:    true
