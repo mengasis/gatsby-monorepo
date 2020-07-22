@@ -18,7 +18,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_ICON:     ':oso-embonor:'
           SLACK_COLOR:    '#00b181'
-          SLACK_MESSAGE:  'PR merged, update now!! :reallycrazyparrot: :rocket: '
-          SLACK_TITLE:    Master updated
+          SLACK_MESSAGE:  'Rebase master now!! :reallycrazyparrot: :rocket: '
+          SLACK_TITLE:    ${{ steps.findPr.outputs.pr }} PR closed
           SLACK_USERNAME: Monorepo status
           MSG_MINIMAL:    true
