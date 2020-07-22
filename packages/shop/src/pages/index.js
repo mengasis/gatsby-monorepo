@@ -4,6 +4,7 @@ import { ItemCard, ItemCardWrapper } from '@gatsby-monorepo/shared'
 const IndexPage = ({ data }) => {
     const edges = data.allShoppingJson.edges
 
+
     return(
         <div>
             <h1>Hi people</h1>
