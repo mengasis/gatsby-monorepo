@@ -1,24 +1,20 @@
 name: Slack Webhook
 
-on:
-  pull_request:
-    types: [closed]
-    branches:
-      - master
+on: push
 
 jobs:
-  slackNotification:
-    name: Slack Notification
+  slack-notifications:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Slack Notification
-        uses: rtCamp/action-slack-notify@master
+        uses: tokorom/action-slack-incoming-webhook@master
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_ICON:     ':oso-embonor:'
-          SLACK_COLOR:    '#00b181'
-          SLACK_MESSAGE:  'Rebase master now!! :ahhhhhhhhh: :rocket:'
-          SLACK_TITLE:    ${{ '#'github.event.number 'PR closed' }}
-          SLACK_USERNAME: Monorepo status
-          MSG_MINIMAL:    true
+          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          attachments: |
+                       [
+                         {
+                            "color": "good",
+                            "text": "<https://github.com/mengasis/gatsby-monorepo/pull/${{ github.event.number }} | PR #${{ github.event.pull_request.number }}> closed :hackerman: | _*rebase master please!*_"
+                         }
+                       ]
