@@ -15,8 +15,10 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_COLOR:    '#dcdc3a'
-          SLACK_MESSAGE:  'Post Content :rocket:'
-          SLACK_TITLE:    PR success
-          SLACK_USERNAME: rtCamp
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_ICON:     ':oso-embonor:'
+          SLACK_COLOR:    '#00b181'
+          SLACK_MESSAGE:  'PR merged, update now!! :reallycrazyparrot: :rocket: '
+          SLACK_TITLE:    Master updated
+          SLACK_USERNAME: Monorepo status
+          MSG_MINIMAL:    true
