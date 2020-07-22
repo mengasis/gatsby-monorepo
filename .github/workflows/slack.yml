@@ -15,7 +15,7 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_COLOR:    '#dcdc3a'
           SLACK_MESSAGE:  'Post Content :rocket:'
           SLACK_TITLE:    PR success
