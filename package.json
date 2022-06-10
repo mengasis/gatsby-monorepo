@@ -43,7 +43,7 @@
     "eslint-plugin-import": "^2.20.2",
     "lerna": "2.11.0",
     "lerna-semantic-release": "^9.1.0",
-    "semantic-release": "^17.0.8"
+    "semantic-release": "^19.0.3"
   },
   "repository": {
     "type": "git",
